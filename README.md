@@ -23,3 +23,9 @@ The primary work was done with the nltk package, using the nltk.stem stemmer, th
 
 We performed some sentiment analysis with the TextBlob package, which showed that the reviews which tended to be more opinionated were also the ones which were more positive, but an extremely small R2 and biased data (there were no reviews which made it fully into 'negative' territory, only going as low as 0.64 out of 1.00, with 0.50 being true neutral) led us to not rely on those results for direction. 
 
+### Step 3: Examining Results
+
+TF-IDF analysis of the corpus of reviews allowed us to highlight specific features. AirBnB as a service normally does not allow for feature searches, only some filtering for specific features. Performing TF-IDF analysis on the reviews serves as a proxy for a textual search that if applied in a larger scope which would allow an individual to search for specific things they might be interested in during a stay. Searching 'View' through our collection of data would pull up listings which have reviews featuring the 'view'. An interesting listing of note that our research identified was a [stay in a treehouse](https://www.airbnb.com/rooms/589214?source_impression_id=p3_1635055913_M2NBCzhugBcIiSRu&guests=1&adults=1) which we not would have found without our text searching. 
+
+The framework of this research serves as a launching point where our application might take off to a larger scope. Although there's no actual search functionality with our data, it would be easily implementable in a small web application (our project was focused on research and analysis rather than application building). 
+
